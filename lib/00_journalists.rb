@@ -60,7 +60,7 @@ def _number(tab)
 end
 
 def sort_alphabetical_order(tab)
-	tab = tab.sort
+	tab = tab.sort_by {|word| word.downcase }
 	return tab
 end
 
